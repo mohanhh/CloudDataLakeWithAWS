@@ -64,7 +64,7 @@ def process_song_data(spark, input_data, output_data):
 
 
 def get_timestamp_udf(ts):
-    '''Convert java style time (milli seconds since 1970) to time in seconds'''
+    '''Convert java style time (milli seconds since 1970) to time in seconds. java style to timestamp style'''
     return(ts/1000)
 
 
